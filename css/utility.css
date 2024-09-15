@@ -1,0 +1,31 @@
+.flex{
+    display: flex;
+}
+
+.text-center-x{
+    text-align: center;
+}
+
+.text-center-y{
+    align-self: center;
+}
+
+.justify-between{
+    justify-content: space-evenly;
+}
+
+.grid{
+    display: grid;
+}
+
+.bg-light-green{
+    background-color: #edfbfb;
+}
+
+.bg-sea-green{
+    background-color:#189B9B !important;
+}
+
+.text-sea-green{
+    color: #189B9B;
+}

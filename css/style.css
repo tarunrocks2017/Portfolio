@@ -1,0 +1,293 @@
+@import './utility.css';
+:root{
+
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+
+/* header css */
+
+header {
+    width: 100%;
+    height: 50px;
+    box-shadow: 1px 1px whitesmoke;
+}
+
+.logo-container{
+    width: 25%;
+    font-size: 30px;
+    color: #189B9B;
+}
+
+.nav{
+    width:55%;
+    
+}
+
+.nav ul li:hover{
+    color:#189B9B;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav ul li{
+    color: rgb(138, 128, 128);
+    font-weight: bold;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+
+.cv-btn-container{
+    width: 20%;
+}
+
+.download-cv{
+    background-color: #189B9B;
+    height:30px;
+    width:80%;
+    border-radius: 10px;
+    color: white;
+    border:#189B9B;
+}
+
+.nav-list{
+    list-style: none;
+    
+}
+
+/* intro container css  */
+
+.intro-container{
+   height:auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.info{
+    height: 60vh;
+    padding:2%;
+}
+
+.info:nth-child(odd) {
+    background-color: #ffffff; /* White */
+  }
+  
+.info:nth-child(even) {
+    background-color: #edfbfb; /* Grey */
+  }
+
+.img-container{
+    width:45%;
+    padding: 4%;
+}
+.introduction-container{
+    width: 55%;
+    padding-top: 7%;
+    color: #666666;
+}
+
+.introduction-container h1{
+    width: 100%;
+    font-size: 40px;
+}
+
+.introduction-container p{
+    width: 95%;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.introduction-container button{
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color:#189B9B ;
+    border: none;
+    color: white;
+}
+.about{
+    height: 80vh;
+    position: relative;
+}
+
+.about p {
+    padding:3%;
+    text-align: justify;
+    font-size: 20px;
+    color: #666666
+}
+
+.skill-container{
+    width:auto;
+    padding:20px;
+    margin-top: 20px;
+    justify-content:space-around;
+
+}
+
+.skill-container div{
+    width: 10%;
+}
+.skill-container div h3{
+    text-align: center;
+}
+.work{
+    height:100vh;
+}
+.work-exp-container{
+    height:100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+}
+
+.exp-card{
+    height:60%;
+    width:70%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.exp-card-item{
+    width:100%;
+}
+
+.period{
+   border-right: 1px solid white;
+   padding:5px;
+}
+.role-info{
+    padding: 5px;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top:50px;
+    right:10px;
+    
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .mobile-menu ul li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .mobile-menu ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  .swiper-container {
+    display: none;
+  }
+/* Extra small devices (phones, less than 576px) */
+@media  (max-width: 970.98px) { 
+    /* Styles for phones */
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    main{
+        overflow-x: hidden;
+    }
+    header.flex{
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .flex{
+        display: block !important;
+    }
+    .info{
+        flex:1;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+      }
+    
+      /* Display the mobile menu when clicked (JS required for toggling this) */
+      .mobile-menu {
+        display: none;
+      }
+    
+      .mobile-menu.active {
+        display: block;
+      }
+
+      .img-container{
+        width: 100%;
+        position: relative;
+        left: 10%;
+     }
+     .img-container img{
+         width: 75%
+     }
+     .introduction-container{
+         width: 100%;
+     }
+     .introduction-container h1{
+         text-align: center;
+     }
+     .introduction-container button{
+         position: relative;
+         left: 40%
+     }
+     .skill-container {
+        display: none;
+      }
+      .skill-container.flex{
+        display: none !important;
+      }
+      .swiper-container {
+        display: block;
+        margin: 30px
+      }
+    
+      .work-exp-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+
+      .exp-card{
+        width: 100%;
+        height: auto;
+      }
+  }
+  @media (min-width: 990px) and (max-width:1150px) {
+    .work{
+        margin-top: 30px;
+    }
+  }
+  
