@@ -291,3 +291,19 @@ header {
     }
   }
   
+  @media (min-width: 368px) and (max-width:500px) {
+    .img-container img{
+        width: 65%;
+        height: 50%;
+        position: relative;
+        left:5%
+    }
+
+    .download-cv{
+        width:100%
+    }
+
+    .logo-container{
+        width:30%;
+    }
+  }
