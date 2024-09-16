@@ -210,7 +210,7 @@ header {
     display: none;
   }
 /* Extra small devices (phones, less than 576px) */
-@media  (max-width: 970.98px) { 
+@media (min-width: 51000px) and (max-width: 970.98px) { 
     /* Styles for phones */
     body{
         width: 100%;
@@ -292,6 +292,76 @@ header {
   }
   
   @media (min-width: 200px) and (max-width:500px) {
+
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    main{
+        overflow-x: hidden;
+    }
+    header.flex{
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .flex{
+        display: block !important;
+    }
+    .info{
+        flex:1;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+      }
+    
+      /* Display the mobile menu when clicked (JS required for toggling this) */
+      .mobile-menu {
+        display: none;
+      }
+    
+      .mobile-menu.active {
+        display: block;
+      }
+
+      .img-container{
+        width: 100%;
+        position: relative;
+        left: 10%;
+     }
+     .introduction-container{
+         width: 100%;
+     }
+     .introduction-container h1{
+         text-align: center;
+     }
+     .introduction-container button{
+         position: relative;
+         left: 40%
+     }
+     .skill-container {
+        display: none;
+      }
+      .skill-container.flex{
+        display: none !important;
+      }
+      .swiper-container {
+        display: block;
+        margin: 30px
+      }
+    
+      .work-exp-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+
+      .exp-card{
+        width: 100%;
+        height: auto;
+      }
     .img-container img{
         width: 65%;
         height: 50%;
