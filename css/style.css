@@ -291,7 +291,7 @@ header {
     }
   }
   
-  @media (min-width: 368px) and (max-width:500px) {
+  @media (min-width: 200px) and (max-width:500px) {
     .img-container img{
         width: 65%;
         height: 50%;
@@ -304,6 +304,9 @@ header {
     }
 
     .logo-container{
-        width:30%;
+        width:35%;
+    }
+    .mobile-menu{
+        z-index: 20;
     }
   }
